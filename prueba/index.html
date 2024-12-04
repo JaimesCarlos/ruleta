@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+<head>
+        <title> SORTEO MOVILGAS</title>
+        <link rel="stylesheet" type="text/css"  href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="spinBtn">MOVILGAS</div>
+            <div class="wheel">
+                <div class="number" style="--i:1;--clr: #4daae7;
+                "><span>TOMATODO</span></div>
+                <div class="number" style="--i:2;--clr: #70dbae;
+                "><span>CARRO SHARK</span></div>
+                <div class="number" style="--i:3;--clr: #ec5114;
+                "><span>DESCT 10</span></div>
+                <div class="number" style="--i:4;--clr: #ddd014;
+                "><span>DESCT 20</span></div>
+                <div class="number" style="--i:5;--clr: #cf2bc7;
+                "><span>RECARGA</span></div>
+                <div class="number" style="--i:6;--clr: #5040dd;
+                "><span>BOWL</span></div>
+                <div class="number" style="--i:7;--clr: #149494;
+                "><span>MUÑECA</span></div>
+                <div class="number" style="--i:8;--clr: #24e934;
+                "><span>TAZA</span></div>
+                
+            </div>
+            <script>
+                let wheel = document.querySelector('.wheel');
+                let spinBtn = document.querySelector('.spinBtn');
+                let value = Math.ceil(Math.random() * 3600);
+
+                spinBtn.onclick = function(){
+                    wheel.style.transform = "rotate(" + value + "deg";
+                    value += Math.ceil(Math.random() * 3600);
+                }
+
+            </script>
+     
+</body>
+</html>
